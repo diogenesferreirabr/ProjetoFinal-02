@@ -1,6 +1,6 @@
 import { hashSync } from "bcrypt"
 
-import Pagina from "../src/DAO/Pagina"
+import Pagina from "../src/DAO/Pagina.js"
 import Livro from "../src/DAO/Livro.js"
 import Usuario from "../src/DAO/Usuario.js"
 
@@ -9,7 +9,7 @@ const models = [
 ]
 
 const semear = async () => {
-    models.forEach(model => model.configure())
+    models.forEach(model => model.configurar())
 
     const pagina = new Pagina()
     pagina.titulo = 'Sobre'
@@ -17,20 +17,20 @@ const semear = async () => {
     const paginas = [pagina]
 
     const livros = []
-    for (let i=1; i<=10; i  ) {
+    for (let i=1; i<=10; i++) {
         const liv = new Livro()
         liv.nome = `Descrição do livro ${i}`
         livros.push(liv)
     }
 
     const usu = new Usuario()
-    admin.email = "admin@case2.com"
-    admin.encryptedPassword = hashSync('12345678', 10)
+    usu.email = "admin@case2.com"
+    usu.encryptedPassword = hashSync('12345678', 10)
     const usuarios = [usu]
     
-    await Pagina._semear(paginas)
-    await Livro._semear(livros)
-    await Usuario._semear(usuarios)
+    await Pagina._semear(paginas, ['titulo', 'texto'])
+    await Livro._semear(livros, ['nome'])
+    await Usuario._semear(usuarios, ['email', 'encryptedPassword'])
 }
 
 semear()

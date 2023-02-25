@@ -20,8 +20,8 @@ export const verificarToken = async (request, response, next) => {
     }
 
     // Procura pelo usuário associado ao token fornecido.
-    const user = await User.findByProperty('authToken', token)
-    if (!user) {
+    const usuario = await Usuario.findByProperty('authToken', token)
+    if (!usuario) {
         response.status(401).send({
             success: false,
             message: 'Não autorizado!'
