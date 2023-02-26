@@ -15,8 +15,7 @@ function Depoimentos() {
             <Col sm="12" md="10">
                 <strong>Depoimento 1</strong>
                 <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellendus at voluptate voluptatibus illo ad vel ut numquam, quas sunt hic esse, dolore recusandae est vero quod minima eius repellat."
+                   
                 </p>
             </Col>
         </Row>
@@ -27,8 +26,7 @@ function Depoimentos() {
             <Col sm="12" md="10">
                 <strong>Depoimento 2</strong>
                 <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellendus at voluptate voluptatibus illo ad vel ut numquam, quas sunt hic esse, dolore recusandae est vero quod minima eius repellat."
+                
                 </p>
             </Col>
         </Row>
@@ -37,10 +35,9 @@ function Depoimentos() {
                 <img src={depoimento03} alt="Foto do depoimento 2" className='rounded' />
             </Col>
             <Col sm="12" md="10">
-                <strong>Depoimento 2</strong>
+                <strong>Depoimento 3</strong>
                 <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellendus at voluptate voluptatibus illo ad vel ut numquam, quas sunt hic esse, dolore recusandae est vero quod minima eius repellat."
+                
                 </p>
             </Col>
         </Row>            

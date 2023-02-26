@@ -2,14 +2,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { LinkContainer } from 'react-router-bootstrap'
-
+import cor from '../assets/css/paginas/Menu.css'
 
 function Menu() {
 
     return (<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <Container>
             <LinkContainer to="/">
-                <Navbar.Brand>Sociedade dos Livros</Navbar.Brand>
+                <Navbar.Brand>Sociedade dos <span src={cor}>Livros</span></Navbar.Brand>
             </LinkContainer>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
