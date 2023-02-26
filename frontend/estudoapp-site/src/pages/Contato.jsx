@@ -1,5 +1,5 @@
 import {Container, Button, Form} from 'react-bootstrap'
-import Depoimentos from '../components/Depoimentos'
+//import Depoimentos from '../components/Depoimentos'
 
 function Contato() {
 
@@ -11,8 +11,10 @@ function Contato() {
 
     return (
         <Container className='conteudo-margin'>
-            <h1>Contato</h1>
-            <p>Entre em contato conosco</p>
+            <h1>Contato</h1><br/>
+            <h5>Duvidas em como realizar o compartilhamento de seu arquivo, não saber como baixar o documento certo para o seu celular, computador ou Ebook?</h5>
+
+            <h5>Entre em contato, iremos te atender o mais rapido possivel.</h5><br/>
 
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="Nome">
@@ -32,7 +34,7 @@ function Contato() {
                 </Button>
             </Form>
 
-            <Depoimentos />
+            
         </Container>
     );
 }
