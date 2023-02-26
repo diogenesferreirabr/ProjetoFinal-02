@@ -1,5 +1,5 @@
 const CmsApi = () => {
-    const url = 'http://localhost:3000'
+    const url = 'http://localhost:8000'
 
     return {
         login (email, password) {
@@ -28,10 +28,10 @@ const CmsApi = () => {
             })
         },        
         getFuncionalidades () {
-            return fetch(`${url}/produtos`)
+            return fetch(`${url}/livros`)
         },
         postFuncionalidade (funcionalidade) {
-            return fetch(`${url}/produtos`, {
+            return fetch(`${url}/livros`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const CmsApi = () => {
             })
         },
         patchFuncionalidade (funcionalidade) {
-            return fetch(`${url}/produtos/${funcionalidade.id}`, {
+            return fetch(`${url}/livros/${funcionalidade.id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ const CmsApi = () => {
             })
         },
         deleteFuncionalidade (id) {
-            return fetch(`${url}/produtos/${id}`, {
+            return fetch(`${url}/livros/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
