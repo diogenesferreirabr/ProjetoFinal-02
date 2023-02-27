@@ -11,6 +11,7 @@ import Usuario from "../DAO/Usuario.js"
 // Cria uma função assíncrona chamada verificarToken que recebe um objeto de request, um objeto de response e uma próxima função middleware.
 export const verificarToken = async (request, response, next) => {
     const token = request.headers['x-auth-token']
+    console.log(token)
     if (!token) {
         response.status(401).send({
             success: false,

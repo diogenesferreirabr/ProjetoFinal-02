@@ -6,8 +6,10 @@ export default class UsuarioController {
     static rotas(app) {
         app.post('/login', UsuarioController.login)
     }
-
+    
     static async login(req, res) {
+     console.log(req.body.email)
+     
         const { email, password } = req.body
         if (!email || !password) {
             return res.status(400).send({

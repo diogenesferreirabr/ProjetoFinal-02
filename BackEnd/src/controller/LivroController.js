@@ -10,16 +10,15 @@ export default class LivroController {
     }
 
     static async inserir(req, res) {
-        const { id, nome, autor, editora, idioma, paginas, ano } = req.body
+        const { nome, autor, editora, idioma, paginas, ano } = req.body
 
-        if ( !id || !nome || !autor || !editora || !idioma || !paginas || !ano ) {
+        if ( !nome || !autor || !editora || !idioma || !paginas || !ano ) {
             return res.status(400).send({
-                message: 'Os campos "titulo" e "descricao" são obrigatórios'
+                message: 'Todos os campos são obrigatórios'
             })
         }
 
         const livro = new Livro()
-        livro.id = id
         livro.nome = nome
         livro.autor = autor
         livro.editora = editora
