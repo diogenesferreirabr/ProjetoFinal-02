@@ -10,50 +10,43 @@
 
 <h2>O QUE DEVEMOS ENTREGAR?</h2>
 
-• O back-end deve ser feito utilizando Node, Express e SQLite.
-• O front-end deve ser feito utilizando React e Bootstrap.
-• Esse projeto será apresentado!
-• A entrega deve ser realizada em um repositório do Github e entregue via link no portal do estudante.
+• O back-end deve ser feito utilizando Node, Express e SQLite.<br>
+• O front-end deve ser feito utilizando React e Bootstrap.<br>
+• Esse projeto será apresentado!<br>
+• A entrega deve ser realizada em um repositório do Github e entregue via link no portal do estudante.<br>
 
 <h2>BACK-END</h2>
 
 <h2>COMANDOS E DEPENDÊNCIAS UTILIZADAS</h2>
 
-• npm init -y (iniciar projeto dentro da pasta desejada);
-• npm install nodemon --save-dev (dependência);
-• npm install bcrypt cors express sqlite sqlite3 (dependência);
-• bcrypt (para armazenar e comparar senhas de forma segura);
-• cors (para permitir que aplicativos em outros domínios acessem o servidor);
-• express (servidor HTTP);
-• nodemon (para monitorar o projeto e reiniciar o servidor quando salvamos um arquivo (hot reload));
-• sqlite (biblioteca auxiliar para utilizar o sqlite3 com Promises);
-• sqlite3 (driver do banco de dados que iremos utilizar).
+• npm init -y (iniciar projeto dentro da pasta desejada);<br>
+• npm install nodemon --save-dev (dependência);<br>
+• npm install bcrypt cors express sqlite sqlite3 (dependência);<br>
+• bcrypt (para armazenar e comparar senhas de forma segura);<br>
+• cors (para permitir que aplicativos em outros domínios acessem o servidor);<br>
+• express (servidor HTTP);<br>
+• nodemon (para monitorar o projeto e reiniciar o servidor quando salvamos um arquivo (hot reload));<br>
+• sqlite (biblioteca auxiliar para utilizar o sqlite3 com Promises);<br>
+• sqlite3 (driver do banco de dados que iremos utilizar).<br>
 
 <h2>FRONT-END</h2>
 
 <h2>REQUISITOS</h2>
 
-• Node.js (na versão 16 ou superior)
-• NPM
+• Node.js (na versão 16 ou superior)<br>
+• NPM<br>
 
 <h2>COMANDO PARA CRIAR O PROJETO</h2>
 
-• npm create vite@latest estudoapp-site --template react
+• npm create vite@latest estudoapp-site --template react<br>
 
 <h2>DEPENDÊNCIAS</h2>
 
-• npm install react-bootstrap bootstrap
-• npm install react-router-dom
-• npm install react-router-bootstrap
+• npm install react-bootstrap bootstrap<br>
+• npm install react-router-dom<br>
+• npm install react-router-bootstrap<br>
 
 <h2>COMANDOS PARA EXECUTAR O PROJETO</h2>
 
-• npm install
-• npm run dev
-
-
-
-
-
-
-
+• npm install<br>
+• npm run dev<br>
