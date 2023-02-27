@@ -1,6 +1,7 @@
 import Pagina from "../src/DAO/Pagina.js"
 import Livro from "../src/DAO/Livro.js"
 import Usuario from "../src/DAO/Usuario.js"
+import Funcionalidade from "../src/DAO/Funcionalidade.js"
 
 const migrar = async () => {
     await Pagina._migrar([
@@ -8,6 +9,7 @@ const migrar = async () => {
         '"TITULO" VARCHAR(200)',
         '"TEXTO" VARCHAR(200)'
     ])
+
     await Livro._migrar([
         '"ID" INTEGER PRIMARY KEY NOT NULL',
         '"NOME" VARCHAR(90)',
@@ -23,6 +25,15 @@ const migrar = async () => {
         '"EMAIL" TEXT NOT NULL',
         '"ENCRYPTED_PASSWORD" TEXT NOT NULL',
         '"AUTH_TOKEN" TEXT'
+    ])
+
+    await Funcionalidade._migrar([
+        '"ID" INTEGER PRIMARY KEY NOT NULL',
+        '"NOME" TEXT NOT NULL'
+        
+        
+        
+        
     ])
 }
 

@@ -1,9 +1,10 @@
 import Pagina from "../src/DAO/Pagina.js"
 import Livro from "../src/DAO/Livro.js"
 import Usuario from "../src/DAO/Usuario.js"
+import Funcionalidade from "../src/DAO/Funcionalidade.js"
 
 const models = [
-    Pagina, Livro, Usuario
+    Pagina, Livro, Usuario, Funcionalidade
 ]
 
 const limpar = async () => {
