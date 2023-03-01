@@ -50,3 +50,8 @@
 
 • npm install<br>
 • npm run dev<br>
+
+
+<h2>GRUPO</h2>
+
+Flavio Patrick, Patrick Costa, Rafael Ferreira, Valdeilson Souza e Diógenes Gomes.
