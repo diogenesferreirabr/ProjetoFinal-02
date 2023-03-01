@@ -54,4 +54,4 @@
 
 <h2> GRUPO </h2>
 
-Flavio Patrick, Patrick Costa, Rafael Ferreira, Valdeilson Souza e Diógenes Gomes.
+<b>Flavio Patrick, Patrick Costa, Rafael Ferreira, Valdeilson Souza e Diógenes Gomes.<b/>
