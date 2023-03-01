@@ -47,7 +47,7 @@ export default class LivroController {
         const {id} = req.params
 
         const livro = await Livro.findByProperty('id', id)
-        if (!product) {
+        if (!livro) {
             return res.status(404).send({
                 message: `O livro de id ${id} não existe`
             })
