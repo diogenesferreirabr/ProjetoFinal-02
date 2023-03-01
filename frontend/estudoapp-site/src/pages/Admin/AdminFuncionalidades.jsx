@@ -55,7 +55,7 @@ function AdminFuncionalidades() {
         botao.classList.remove('btn-primary')
         botao.classList.add('btn-success')
         botao.onclick = (event) => {salvarEdicao(event.target, id)}
-
+      
         const linha = botao.parentNode.parentNode
         const colunaNome = linha.children[1]
         // Cria um input para o nome
@@ -85,7 +85,7 @@ function AdminFuncionalidades() {
         inputIdioma.value = colunaIdioma.innerText
         colunaIdioma.innerText = ''
         colunaIdioma.appendChild(inputIdioma)
-        //cria um input para paginas
+        // Cria um input para paginas
         const colunaPaginas = linha.children[5]
         const inputPaginas = document.createElement('input')
         inputPaginas.type = 'text'
@@ -93,14 +93,14 @@ function AdminFuncionalidades() {
         colunaPaginas.innerText = ''
         colunaPaginas.appendChild(inputPaginas)
         // Cria um input para o Ano
-        const colunaAno = linha.children[5]
+        const colunaAno = linha.children[6]
         const inputAno = document.createElement('input')
         inputAno.type = 'text'
         inputAno.value = colunaAno.innerText
         colunaAno.innerText = ''
         colunaAno.appendChild(inputAno)
-
-    }
+      }
+      
 
     async function salvarEdicao(botao, id) {
          
